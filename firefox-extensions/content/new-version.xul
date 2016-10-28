@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+
+<window
+  id="dobbs-new-version" title="DOBBS - new version available"
+  xmlns:html="http://www.w3.org/1999/xhtml"
+  xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+  width="400" height="300"
+  onload="window.arguments[0].initialize(window);">
+
+  <vbox flex="1" style="overflow:auto;background:#EEEEEE;">
+    <html:div id="newVersionWindow" type="content" style="padding:3px 5px 3px 3px;" />
+    <hbox align="right">
+      <button label="Go To DOBBS Website" id="button-go-to-website" oncommand="window.arguments[0].onGoToWebsiteButtonClick(window);"/>
+      <button label="Close" id="button-close-new-version-dialog" oncommand="window.arguments[0].onClosingNewVersionDialogButtonClick(window);"/>
+    </hbox>
+  </vbox>
+
+</window>

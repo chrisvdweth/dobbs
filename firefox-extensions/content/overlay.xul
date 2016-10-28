@@ -1,0 +1,25 @@
+<?xml version="1.0"?>
+<?xml-stylesheet href="chrome://dobbs/skin/overlay.css" type="text/css"?>
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE overlay SYSTEM "chrome://dobbs/locale/overlay.dtd">
+<overlay id="dobbs-overlay"
+         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/javascript" src="chrome://dobbs/content/jquery-1.7.2.js" />
+  <script type="application/javascript" src="chrome://dobbs/content/dobbs.js" />
+  <script type="application/javascript" src="chrome://dobbs/content/dobbs_view.js" />
+  <script type="application/javascript" src="chrome://dobbs/content/dobbs_model.js" />
+  <script type="application/javascript" src="chrome://dobbs/content/dobbs_http.js" />
+  <script type="application/javascript" src="chrome://dobbs/content/sha1.js" />
+  <script type="application/javascript" src="chrome://dobbs/content/aes.js" />
+
+  <menupopup id="menu_ToolsPopup">
+    <menu id="menu-deri-dobbs" label="DOBBS" >
+      <menupopup>
+	<menuitem id="menu-dobbs" label="Track Behavior" checked="true" oncommand="dobbsController.onTrackBehaviorClick();" />
+	<!-- <menuitem id="menu-logger-console" label="Log Console" checked="false" oncommand="dobbsController.onLogConsoleClick();" /> -->
+      </menupopup>
+    </menu>
+  </menupopup> 
+  
+
+</overlay>

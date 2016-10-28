@@ -1,0 +1,7 @@
+content	dobbs	content/
+overlay	chrome://browser/content/browser.xul	chrome://dobbs/content/overlay.xul
+
+locale	dobbs	en-US	locale/en-US/
+
+skin	dobbs	classic/1.0	skin/
+
